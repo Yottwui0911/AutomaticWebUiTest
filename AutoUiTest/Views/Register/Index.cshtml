@@ -4,5 +4,40 @@
 
 <div class="text-center">
   <h1 class="display-4">Register</h1>
-  <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+  <h2>登録者名</h2>
+  <input type="text" />
+
+  <br />
+  <h2>性別</h2>
+  <input type="radio" name="sex" value="male" /> 男性
+  <input type="radio" name="sex" value="female" /> 女性
+  <input type="radio" name="sex" value="neither" /> どちらでもない
+  <input type="radio" name="sex" value="other" /> その他
+
+  <br />
+  <h2>登録者名</h2>
+  <select name="reason">
+    <option value="1">テレビで見た</option>
+    <option value="2">メルマガが届いた</option>
+    <option value="3">SNSで見た</option>
+    <option value="4">新聞で見た</option>
+    <option value="5">雑誌で見た</option>
+    <option value="6">その他</option>
+  </select>
+  <br />
+
+  <button type="submit"> 登録 </button>
+
+
+
+  @*@section Scripts {
+      <script type="text/javascript">
+        //<![CDATA[
+        function setRegularWorkTime(from, to) {
+          document.getElementById(from).value = "9:00";
+          document.getElementById(to).value = "18:00";
+        }
+                      //]]>
+      </script>
+    }*@
 </div>
